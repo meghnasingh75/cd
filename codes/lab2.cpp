@@ -1,3 +1,18 @@
+/*
+1. Start
+2. Get the input expression from the user.
+3. Store the keywords and operators.
+4. Perform analysis of the tokens based on the ASCII values.
+5.
+ASCII Range TOKEN TYPE
+97-122 Keyword else identifier
+48-57 Constant else operator
+Greater than 12 Symbol
+6. Print the token types.
+7. Stop
+*/
+
+
 #include<iostream>
 #include<fstream>
 #include<stdlib.h>
