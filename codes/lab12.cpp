@@ -1,3 +1,15 @@
+/*
+Algorithm:
+1 Start.
+2 Store the grammar in a map.
+3 Take input of a string.
+4 Then evaluate the string with the grammar.
+5 Repeat step 4 until the string is ended.
+6 If the string does not match with the grammar then print not accepted, else accepted.
+7 End.
+*/
+
+
 #include <iostream>
 #include <map>
 #include <vector>
