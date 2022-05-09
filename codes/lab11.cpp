@@ -1,3 +1,12 @@
+/*
+Algorithm:
+Input: It contains a basic block
+Output: It contains the following information:
+Each node contains a label. For leaves, the label is an identifier.
+Each node contains a list of attached identifiers to hold the computed values.
+*/
+
+
 #include <iostream>
 #include <string>
 
