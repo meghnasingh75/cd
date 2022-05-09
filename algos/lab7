@@ -1,0 +1,16 @@
+1. Start the program.
+2. Get the Set of Productions for the grammar from the user. No redundant & cyclic
+productions must be given.
+3. The conditions to be checked are:
+Conditions Inclusions in result
+S->Sa add a
+S->Aa add a, production of
+A
+S->ab add a
+S->AB Production of A
+S->SA none
+S->a take a
+S->SA* none taken
+S->*a take * leave a
+4. Print the Leading edges.
+5. Stop the program.

@@ -1,0 +1,8 @@
+Algorithm:
+Start.
+Store the grammar in a map.
+Take input of a string.
+Then evaluate the string with the grammar.
+Repeat step 4 until the string is ended.
+If the string does not match with the grammar then print not accepted, else accepted.
+End.
