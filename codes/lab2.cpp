@@ -49,5 +49,4 @@ int main(){
    fin.close();
 
    return 0;
-
 }
