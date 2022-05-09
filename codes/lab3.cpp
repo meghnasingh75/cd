@@ -1,3 +1,40 @@
+/*
+Algorithm:
+If x is a terminal, then FIRST(x) = { ‘x’ }
+If x-> Є, is a production rule, then add Є to FIRST(x).
+If X->Y1 Y2 Y3....Yn is a production,
+FIRST(X) = FIRST(Y1)
+If FIRST(Y1) contains Є then FIRST(X) = { FIRST(Y1) – Є } U { FIRST(Y2) }
+If FIRST (Yi) contains Є for all i = 1 to n, then add Є to FIRST(X).
+
+Procedure First
+1. Input the number of production N.
+2. Input all the production rule PArray
+3. Repeat steps a, b, c until processes all input production rule i.e. PArray[N]
+a. If Xi ≠ Xi+1 then
+i. Print Result array of Xi which contain FIRST(Xi)
+b. If first element of Xi of PArray is Terminal or ε Then
+i. Add Result = Result U first element
+c. If first element of Xi of PArray is Non-Terminal Then
+i. searchFirst(i, PArray, N)
+4. End Loop
+5. If N (last production) then
+a. Print Result array of Xi which contain FIRST(Xi)
+6. End
+
+Procedure searchFirst(i, PArray, N)
+1. Repeat steps Loop j=i+1 to N
+a. If first element of Xj of PArray is Non-Terminal Then
+i. searchFirst(j, of PArray, N)
+b. If first element of Xj of PArray is Terminal or ε Then
+i. Add Result = Result U first element
+ii. Flag=0
+2. End Loop
+3. If Flag = 0 Then
+a. Print Result array of Xj which contain FIRST(Xj)
+*/
+
+
 #include<bits/stdc++.h>
 using namespace std;
 
