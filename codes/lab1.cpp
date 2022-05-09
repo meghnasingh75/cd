@@ -1,3 +1,18 @@
+/*
+1. Start
+2. Enter the number of states.
+3. Enter the number of input variables.
+4. Enter the state and its information.
+5. Enter the input variables.
+6. Enter the transition function information i.e., transition value from a state with an
+input variable.
+7. Show the Transition Table.
+8. Stop
+*/
+
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
