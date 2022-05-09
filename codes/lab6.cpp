@@ -1,3 +1,21 @@
+/*
+1. Start the Process.
+2. Symbols from the input are shifted onto stack until a handle appears on top of the
+stack.
+3. The Symbols that are the handle on top of the stack are then replaces by the
+left-hand side of the production (reduced).
+4. If this result in another handle on top of the stack, then another reduction is done,
+otherwise we go back to shifting.
+5. This combination of shifting input symbols onto the stack and reducing productions
+when handles appear on the top of the stack continues until all of the input is
+consumed and the goal symbol is the only thing on the stack - the input is then
+accepted.
+6. If we reach the end of the input and cannot reduce the stack to the goal symbol, the
+input is rejected.
+7. Stop the process.
+*/
+
+
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
