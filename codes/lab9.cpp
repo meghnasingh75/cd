@@ -1,3 +1,22 @@
+/*
+1. Start the program.
+2. Get the Set of Productions for the grammar from the user. No redundant & cyclic
+productions must be given.
+3. Reverse each input productions and print it.
+4. The conditions to be checked according to the reversed inputs are:
+1. Conditions Inclusions in result
+S->Sa add a
+S->Aa add a, production of A
+S->ab add a
+S->AB Production of A
+S->SA none
+S->a take a
+S->SA* none taken
+S->*a take * leave a
+5. Print the Trailing edges.
+6. Stop the program.
+*/
+
 #include <stdio.h>
 #include <ctype.h>
 
